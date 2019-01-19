@@ -6,7 +6,7 @@ export default class App extends React.Component {
     super(props);
     this.state = {
       buttonStyle: null,
-      colors: { brightColor: '#fdff03', shadow: '#F5F711' }
+      colors: { basic: 'white' }
     }
   };
 
@@ -15,9 +15,9 @@ export default class App extends React.Component {
       <Container>
         <GlobalStyle />
         <Banner>
-          <Title></Title>
+          <Title>Styles</Title>
         </Banner>
-        <ClickMe></ClickMe>
+        <ClickMe data-color={this.state.colors}>Click me</ClickMe>
       </Container>
     );
   }

@@ -1,6 +1,5 @@
 node_modules
 
-public/bundle.js
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
